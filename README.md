@@ -11,11 +11,11 @@ EKS Auto Mode demo.
 
 # What's the beauty here?
 
-We provioned EKS cluster with Auto Mode and didn't need to configure node groups, addons, etc.
-The cluster starts scaled to zero, but when we provision the nginx-demo, we see worker node provisioned automatically.
-Also the ALB and EBS volume are provisioned automatically.
-When we update the control plane to a newer version, then we will see worker nodes upgraded automatically after certain delay.
-Same would happen for security updates to the underlaying Bottlerocket AMI when a new version is released.
+- We provioned EKS cluster with Auto Mode and didn't need to configure node groups, addons, etc.
+- The cluster starts scaled to zero, but when we provision the nginx-demo, we see worker node provisioned automatically.
+- Also the ALB and EBS volume are provisioned automatically.
+- When we update the control plane to a newer version, then we will see worker nodes upgraded automatically after certain delay.
+- The same will happen with security updates to the underlaying Bottlerocket AMI when a new version is released.
 
 # Terraform support
 
