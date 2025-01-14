@@ -1,5 +1,6 @@
-# eks-auto-mode
-EKS Auto Mode demo.
+# EKS Auto Mode demo
+
+This repo aims to provide a super simple, but highly impressive demo of EKS Auto Mode that was released at AWS re:Invent 2024.
 
 ## Instructions
 
