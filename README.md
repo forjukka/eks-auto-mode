@@ -1,4 +1,4 @@
-# EKS Auto Mode demo
+# Amazon EKS Auto Mode demo
 
 This repo aims to provide a super simple, but highly impressive demo of EKS Auto Mode that was released at AWS re:Invent 2024.
 
@@ -14,10 +14,11 @@ This repo aims to provide a super simple, but highly impressive demo of EKS Auto
 
 ## What's the beauty here?
 
-- We provioned EKS cluster with Auto Mode and didn't need to configure node groups, addons, etc.
-- The cluster starts scaled to zero, but when we provision the nginx-demo, we see a worker node provisioned automatically.
+- We provioned an EKS cluster with Auto Mode and didn't need to configure any node groups, addons, etc.
+- The cluster starts scaled to zero, but when we provision the nginx-demo, we see a worker node appear automatically.
 - Also the ALB and EBS volume are provisioned automatically.
 - When we update the control plane to a newer version, then we will see all worker nodes upgraded automatically and gradually.
+- When upgrading, we don't need to check version compatibility of the addons.
 - The same rolling upgrade will happen with security updates when a new EKS Auto Mode AMI is released.
 
 ## Terraform support
@@ -26,4 +27,4 @@ See "EKS Auto Mode" chapter in here: https://registry.terraform.io/modules/terra
 
 ## AWS CDK support
 
-EKS Auto Mode is not yet supported in the L2 construct for EKS cluster.
+EKS Auto Mode is not yet supported in the L2 construct for EKS cluster (1/2025).
