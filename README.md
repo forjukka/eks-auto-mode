@@ -5,7 +5,7 @@ This repo aims to provide a super simple, but highly impressive demo of EKS Auto
 ## Instructions
 
 1. Setup AWS CLI and your credentials
-2. eksctl create cluster --name=<cluster-name> --version 1.30 --enable-auto-mode # nodegroup and addons are not needed!
+2. eksctl create cluster --name=CLUSTER_NAME --version 1.30 --enable-auto-mode # nodegroup and addons are not needed!
 3. kubectl apply -f nginx-demo.yaml
 4. NGINX_DEMO=$(kubectl get ingress nginx-ingress -n nginx-demo -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
 5. curl $NGINX_DEMO # run this after a couple of minutes when ALB has finished provisioning.
