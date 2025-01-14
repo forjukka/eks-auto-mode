@@ -10,7 +10,7 @@ This repo aims to provide a super simple, but highly impressive demo of EKS Auto
 4. NGINX_DEMO=$(kubectl get ingress nginx-ingress -n nginx-demo -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
 5. curl $NGINX_DEMO # run this after a couple of minutes when ALB has finished provisioning.
 
-# What's the beauty here?
+## What's the beauty here?
 
 - We provioned EKS cluster with Auto Mode and didn't need to configure node groups, addons, etc.
 - The cluster starts scaled to zero, but when we provision the nginx-demo, we see worker node provisioned automatically.
@@ -18,10 +18,10 @@ This repo aims to provide a super simple, but highly impressive demo of EKS Auto
 - When we update the control plane to a newer version, then we will see worker nodes upgraded automatically after certain delay.
 - The same will happen with security updates to the underlaying Bottlerocket AMI when a new version is released.
 
-# Terraform support
+## Terraform support
 
 See "EKS Auto Mode" chapter in here: https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
 
-# AWS CDK support
+## AWS CDK support
 
 EKS Auto Mode is not yet supported in the L2 construct for EKS cluster.
