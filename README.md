@@ -14,12 +14,12 @@ This repo aims to provide a super simple, but highly impressive demo of EKS Auto
 
 ## What's the beauty here?
 
-- We provioned an EKS cluster with Auto Mode and didn't need to configure any node groups, addons, etc.
-- The cluster starts scaled to zero, but when we provision the nginx-demo, we see a worker node appear automatically.
-- Also the ALB and EBS volume are provisioned automatically.
-- When we update the control plane to a newer version, then we will see all worker nodes upgraded automatically and gradually.
-- When upgrading, we don't need to check version compatibility of the addons.
-- The same rolling upgrade will happen with security updates when a new EKS Auto Mode AMI is released.
+- We provioned a production grade EKS Auto Mode cluster and didn't need to configure any node groups, addons, etc.
+- The cluster starts scaled to zero, but when we provision the nginx-demo, we see a worker node appear in seconds.
+- ALB and EBS volume for the application are provisioned and configured automatically.
+- When we update the control plane to a newer version, then we will see all worker nodes and addons upgraded automatically.
+- Security updates would also be applied automatically to the nodes.
+- In short, EKS Auto Mode makes Kubernetes easy!
 
 ## Terraform support
 
